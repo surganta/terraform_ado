@@ -31,6 +31,7 @@ resource "azurerm_resource_group" "rg" {
   location = "${var.rglocation}"
 }
 
+# This is Virtuval Network
 resource "azurerm_virtual_network" "vnet1" {
   name                = "${var.prefix}-10"
   resource_group_name = "${azurerm_resource_group.rg.name}"
